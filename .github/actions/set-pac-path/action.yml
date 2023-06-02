@@ -12,7 +12,7 @@ runs:
       uses: microsoft/powerplatform-actions/unpack-solution@latest
       with:
         solution-file: fake.zip
-        solution-folder: fake
+        solution-folder: fake 
 
     - if: ${{ always() }}
       id: get-pac-path
