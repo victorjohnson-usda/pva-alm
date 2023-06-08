@@ -36,6 +36,8 @@ jobs:
   # Needs it's own job in order for build-deploy-solution->environment value to be used.
   get-environment-from-domain:
     runs-on: ubuntu-latest
+    container:
+      image: alpine:3.10
     steps:
       - uses: actions/checkout@v2
       - id: get-subdomain
