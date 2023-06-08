@@ -49,6 +49,8 @@ jobs:
 
   export-from-dev:
     runs-on: ubuntu-latest
+        container:
+      image: alpine:3.10
     needs: get-environment-from-domain
     environment: ${{ needs.get-environment-from-domain.outputs.subdomain }}
     env:
