@@ -35,6 +35,6 @@ RUN pwsh
 # 	chmod +x /opt/microsoft/powershell/7-preview/pwsh && \
 # 	ln -s /opt/microsoft/powershell/7-preview/pwsh /usr/bin/pwsh-preview
 #
-# ENTRYPOINT ["pwsh-preview"]
-ENTRYPOINT ["/entrypoint.sh"]
+ ENTRYPOINT ["pwsh-preview"]
+# ENTRYPOINT ["/entrypoint.sh"]
 CMD []
