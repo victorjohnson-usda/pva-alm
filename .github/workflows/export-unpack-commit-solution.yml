@@ -37,7 +37,7 @@ jobs:
   get-environment-from-domain:
     runs-on: ubuntu-latest
     container:
-      image: 'dockerfile'
+      image: azure-powershell:alpine-3.13
     steps:
       - uses: actions/checkout@v2
       - id: get-subdomain
@@ -50,7 +50,7 @@ jobs:
   export-from-dev:
     runs-on: ubuntu-latest
     container:
-      image: 'dockerfile'
+      image: azure-powershell:alpine-3.13
     needs: get-environment-from-domain
     environment: ${{ needs.get-environment-from-domain.outputs.subdomain }}
     env:
