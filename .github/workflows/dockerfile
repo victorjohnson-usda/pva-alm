@@ -1,4 +1,4 @@
-FROM azure-powershell:alpine-3.13
+FROM alpine-3.13
 
 ARG REPOSITORY=PSGallery
 ARG MODULE=Az
